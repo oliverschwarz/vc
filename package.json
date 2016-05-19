@@ -1,0 +1,8 @@
+
+{
+	"name": "vc-oliverschwarz",
+  "version": "0.1.0",
+  "devDepencies": {
+    "grunt": "~0.4.4"
+  }
+}
