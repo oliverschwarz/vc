@@ -1,3 +1,6 @@
+$global_bgcolor: #eee;
+
 body,html {
+  background-color: $global_bgcolor;
   font-family: georgia, times, serif;
 }
