@@ -2,7 +2,9 @@
   "name": "vc-oliverschwarz",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest"
   },
   "repository": {
     "type": "git",
