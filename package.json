@@ -1,12 +1,14 @@
 {
   "name": "vc-oliverschwarz",
   "version": "0.1.0",
+  "author": "Oliver Schwarz",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-clean": "latest",
-    "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "latest",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-htmlhint": "^0.9.13",
     "matchdep": "latest"
   },
   "dest": "./dist",
@@ -14,6 +16,5 @@
     "type": "git",
     "url": "git://github.com/oliverschwarz/vc-oliverschwarz.git"
   },
-  "author": "Oliver Schwarz",
   "license": "MIT"
 }
