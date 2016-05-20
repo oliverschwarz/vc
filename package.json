@@ -2,11 +2,14 @@
   "name": "vc-oliverschwarz",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "latest",
     "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "latest",
-    "grunt-contrib-sass": "latest"
+    "matchdep": "latest"
   },
+  "dest": "./dist",
   "repository": {
     "type": "git",
     "url": "git://github.com/oliverschwarz/vc-oliverschwarz.git"
