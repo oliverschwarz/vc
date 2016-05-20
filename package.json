@@ -1,8 +1,13 @@
-
 {
-	"name": "vc-oliverschwarz",
+  "name": "vc-oliverschwarz",
   "version": "0.1.0",
-  "devDepencies": {
-    "grunt": "~0.4.4"
-  }
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oliverschwarz/vc-oliverschwarz.git"
+  },
+  "author": "Oliver Schwarz",
+  "license": "MIT"
 }
