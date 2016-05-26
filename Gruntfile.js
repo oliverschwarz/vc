@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     },
     watch: {
       html: {
-        files: ['src/index.html'],
+        files: ['src/*.html'],
         tasks: ['htmlhint']
       },
       css: {
@@ -31,11 +31,11 @@ module.exports = function(grunt) {
           'head-script-disabled': true,
           'style-disabled': true
         },
-        src: ['src/index.html']
+        src: ['src/*.html']
       }
     }
   });
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default',['watch']);
+  grunt.registerTask('default', []);
 }
