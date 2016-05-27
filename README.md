@@ -9,6 +9,7 @@ _Feel free to copy/fork and make your own._
 This is a list of the things I want to to with this smaller project.
 
 * Introducing a versioning (semver)
+* Branch
 * jshint the Gruntfile.js
 * Adding normalize.js
 * Read about and set http header
