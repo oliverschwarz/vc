@@ -1,6 +1,27 @@
-$global_bgcolor: #eee;
+$global_bgcolor: #fff;
+$global_fgcolor: #222;
+$global_width: 48em;
 
 body,html {
   background-color: $global_bgcolor;
-  font-family: georgia, times, serif;
+  color: $global_fgcolor;
+  font: 100%/1.4 Georgia, Times, serif;
+  margin: 0;
+  padding: 0 .5em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  max-width: 100%;
+  width: $global_width;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+@media (min-width: 667px) {
+  header, main, footer {
+    width: 34em;
+  }
 }
