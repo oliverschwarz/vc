@@ -10,3 +10,9 @@ This is a list of the things I want to to with this smaller project.
 
 * Introducing a versioning (semver)
 * jshint the Gruntfile.js
+* Adding normalize.js
+* Read about and set http header
+* Set up cross-domain policy (do I need this?)
+* Add favicon(s)
+* Add humans.txt
+* Add robots.txt
