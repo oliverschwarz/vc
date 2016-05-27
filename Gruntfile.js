@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -15,7 +17,10 @@ module.exports = function(grunt) {
       },
       css: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          sourcemap: 'none'
+        }
       }
     },
     htmlhint: {
@@ -33,9 +38,24 @@ module.exports = function(grunt) {
         },
         src: ['src/*.html']
       }
+    },
+    clean: ['<%= pkg.dest %>'],
+    rsync: {
+      options: {
+        args: ['--verbose'],
+        exclude: ['.git*', '*.scss', 'scss', '*.css.map'],
+        recursive: true
+      },
+      dist: {
+        options: {
+          src: 'src/',
+          dest: "<%= pkg.dest %>"
+        }
+      }
     }
   });
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.registerTask('default', []);
+  grunt.registerTask('deploy', ['clean', 'rsync']);
 }
