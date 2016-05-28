@@ -1,3 +1,5 @@
+@import 'normalize.scss';
+
 $global_bgcolor: #fff;
 $global_fgcolor: #222;
 $global_width: 48em;
@@ -14,6 +16,10 @@ header, main, footer {
   margin: 0 auto;
   max-width: 100%;
   width: $global_width;
+}
+
+article {
+  font-size: 1.2em;
 }
 
 h1, h2 {
