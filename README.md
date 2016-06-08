@@ -11,9 +11,17 @@ This is a list of the things I want to to with this smaller project.
 * Introducing a versioning (semver)
 * Branch
 * jshint the Gruntfile.js
-* Adding normalize.js
+* -Adding normalize.js-
 * Read about and set http header
 * Set up cross-domain policy (do I need this?)
 * Add favicon(s)
 * Add humans.txt
 * Add robots.txt
+* Minify CSS
+
+## Changelog
+
+### 08.06.2016
+
+* Added yellow background for headline (and increased padding)
+* Made float and clearfix for the footer navigation
