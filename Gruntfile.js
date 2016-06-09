@@ -52,10 +52,21 @@ module.exports = function(grunt) {
           dest: "<%= pkg.dest %>"
         }
       }
+    },
+    cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: {
+          '<%= pkg.dest %>/css/style.min.css': '<%= pkg.dest %>/css/style.css'
+        }
+      }
     }
   });
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.registerTask('default', []);
-  grunt.registerTask('deploy', ['clean', 'rsync']);
+  grunt.registerTask('deploy', ['clean', 'rsync', 'cssmin']);
 }

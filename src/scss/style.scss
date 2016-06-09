@@ -7,7 +7,7 @@ $global_width: 48em;
 body,html {
   background-color: $global_bgcolor;
   color: $global_fgcolor;
-  font: 100%/1.4 Georgia, Times, serif;
+  font: 100%/1.7 Georgia, Times, serif;
   margin: 0;
   padding: .5em;
 }
@@ -58,6 +58,6 @@ footer nav ul li {
 
 @media (min-width: 667px) {
   header, main, footer {
-    width: 40em;
+    width: 36em;
   }
 }
