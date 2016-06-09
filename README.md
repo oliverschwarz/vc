@@ -17,9 +17,15 @@ This is a list of the things I want to to with this smaller project.
 * Add favicon(s)
 * Add humans.txt
 * Add robots.txt
-* Minify CSS
+* ~~Minify CSS~~
+* Solve problem with *.min.css reference in HTML
 
 ## Changelog
+
+### 09.06.2016
+
+* Content change
+* Added CSS minify (use `npm install`)
 
 ### 08.06.2016
 
