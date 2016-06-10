@@ -15,6 +15,7 @@ This is a list of the things I want to to with this smaller project.
 * Read about and set http header
 * Set up cross-domain policy (do I need this?)
 * Add favicon(s)
+* Add .htaccess to repos
 * Add humans.txt
 * Add robots.txt
 * ~~Minify CSS~~
