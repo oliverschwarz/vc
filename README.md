@@ -23,6 +23,11 @@ This is a list of the things I want to to with this smaller project.
 
 ## Changelog
 
+### 14.06.2016
+
+* Added my profile pic (using mozcjpeg)
+* Decreased headline in mobile view
+
 ### 09.06.2016
 
 * Content change
