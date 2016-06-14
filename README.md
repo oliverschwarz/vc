@@ -10,16 +10,16 @@ This is a list of the things I want to to with this smaller project.
 
 * Introducing a versioning (semver)
 * Branch
-* jshint the Gruntfile.js
+* ~~jshint the Gruntfile.js~~
 * ~~Adding normalize.js~~
 * Read about and set http header
 * Set up cross-domain policy (do I need this?)
 * Add favicon(s)
 * Add .htaccess to repos
 * Add humans.txt
-* Add robots.txt
+* ~~Add robots.txt~~
 * ~~Minify CSS~~
-* Solve problem with *.min.css reference in HTML
+* ~~Solve problem with *.min.css reference in HTML~~
 
 ## Changelog
 
@@ -27,6 +27,9 @@ This is a list of the things I want to to with this smaller project.
 
 * Added my profile pic (using mozcjpeg)
 * Decreased headline in mobile view
+
+* Adding jshint for Gruntfile.js
+* Adding robots.txt
 
 ### 09.06.2016
 
