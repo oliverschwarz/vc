@@ -19,11 +19,20 @@ header, main, footer {
 }
 
 header {
-  background: #fdc824;
+}
+
+header figure {
+  text-align: center;
+  margin: 3em 0;
+}
+
+header img {
+  border-radius: 50%;
 }
 
 header h1 {
-  font-size: 3em;
+  background: #fdc824;
+  font-size: 2.5em;
 }
 
 article {
@@ -59,5 +68,8 @@ footer nav ul li {
 @media (min-width: 667px) {
   header, main, footer {
     width: 36em;
+  }
+  header h1 {
+    font-size: 3em;
   }
 }
