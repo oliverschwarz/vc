@@ -1,0 +1,3 @@
+# robots.txt ~ thanks to https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt
+User-agent: *
+Disallow:
