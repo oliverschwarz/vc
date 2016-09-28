@@ -32,7 +32,6 @@ This is a list of the things I want to to with this smaller project.
 
 * Added my profile pic (using mozcjpeg)
 * Decreased headline in mobile view
-
 * Adding jshint for Gruntfile.js
 * Adding robots.txt
 
