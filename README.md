@@ -23,6 +23,11 @@ This is a list of the things I want to to with this smaller project.
 
 ## Changelog
 
+### 28.09.2016
+
+* Added a section for upcoming and recent talks
+* Changed content license from _copyright_ to CC-BY-SA 4.0
+
 ### 14.06.2016
 
 * Added my profile pic (using mozcjpeg)
