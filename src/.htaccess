@@ -1,0 +1,24 @@
+# https://raymii.org/s/tutorials/HTTP_Strict_Transport_Security_for_Apache_NGINX_and_Lighttpd.html
+Header always set Strict-Transport-Security max-age=31536000
+
+# https://content-security-policy.com/
+Header set Content-Security-Policy "default-src 'self';"
+
+# (German) http://www.golem.de/news/cross-site-scripting-javascript-code-in-bilder-einbetten-1411-110264-2.html
+Header set X-Content-Type-Options "nosniff"
+
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+Header always append X-Frame-Options NONE
+
+# Enforce https/443
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteCond %{SERVER_PORT} !^443$ [NC]
+    RewriteRule ^(.*)$ https://oliverschwarz.info/$1 [r=301,L]
+
+    RewriteCond %{HTTP_HOST} ^www\.oliverschwarz\.info$ [NC]
+    RewriteRule ^(.*)$ https://oliverschwarz.info/$1 [r=301,L]
+
+</IfModule>
