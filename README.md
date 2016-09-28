@@ -25,6 +25,7 @@ This is a list of the things I want to to with this smaller project.
 
 ### 28.09.2016
 
+* Adding no-referrer meta element
 * Added a section for upcoming and recent talks
 * Changed content license from _copyright_ to CC-BY-SA 4.0
 
