@@ -10,6 +10,9 @@ Header set X-Content-Type-Options "nosniff"
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 Header always append X-Frame-Options NONE
 
+# http://stackoverflow.com/questions/9090577/what-is-the-http-header-x-xss-protection
+X-XSS-Protection: 1; mode=block
+
 # Enforce https/443
 <IfModule mod_rewrite.c>
 
