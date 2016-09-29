@@ -26,6 +26,10 @@ This is a list of the things I want to to with this smaller project before relea
 
 ### 29.09.2016
 
+* deploy is gone for the time being
+* Extended the build job by copying .htaccess to the right location
+* Added grunt-contrib-copy and removed the default htaccess from src/ docroot
+* Renamed deploy job to "build" - which is more correct
 * Added social media/open graph information to the header of index.html
 
 ### 28.09.2016

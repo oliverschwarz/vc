@@ -52,7 +52,7 @@
       rsync: {
         options: {
           args: ['--verbose'],
-          exclude: ['.git*', '*.scss', 'scss', '*.css.map'],
+          exclude: ['.git*', '*.scss', 'scss', '*.css.map', 'assets', '.DS_Store'],
           recursive: true
         },
         dist: {
@@ -72,12 +72,18 @@
             '<%= pkg.dest %>/css/style.min.css': '<%= pkg.dest %>/css/style.css'
           }
         }
+      },
+      copy: {
+        main: {
+          src: 'src/assets/.htaccess',
+          dest: '<%= pkg.dest %>/.htaccess'
+        }
       }
     });
 
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     grunt.registerTask('default', []);
-    grunt.registerTask('deploy', ['clean', 'rsync', 'cssmin']);
+    grunt.registerTask('build', ['clean', 'rsync', 'cssmin', 'copy']);
   };
 
 }());
