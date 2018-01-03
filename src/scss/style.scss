@@ -1,7 +1,7 @@
 @import 'normalize.scss';
 
 // defaults
-$global_bgcolor: #fff;
+$global_bgcolor: #EEE5E9;
 $global_fgcolor: #222;
 $global_width: 48em;
 
@@ -10,13 +10,14 @@ body,html {
   color: $global_fgcolor;
   font: 100%/1.7 Georgia, Times, serif;
   margin: 0;
-  padding: .5em;
+  padding: 0;
 }
 
 header, main, footer {
   margin: 0 auto;
   max-width: 100%;
   width: $global_width;
+  padding: 0 1em;
 }
 
 header {
@@ -32,7 +33,7 @@ header img {
 }
 
 header h1 {
-  background: #fdc824;
+  background: #F1BF98;
   font-size: 2.5em;
 }
 
@@ -67,6 +68,13 @@ footer nav ul li {
 }
 
 @media (min-width: 667px) {
+
+  body {
+    border-bottom: 2em solid #EB4511;
+    padding: 3em 0;
+    border-top: 2em solid #EB4511;
+  }
+
   header, main, footer {
     width: 36em;
   }
