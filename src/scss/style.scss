@@ -1,9 +1,13 @@
 @import 'normalize.scss';
 
 // defaults
-$global_bgcolor: #EEE5E9;
+$global_bgcolor: #DCDFE5;
 $global_fgcolor: #222;
+$header_background: #CC976B;
+$global_bordercolor: #694535;
 $global_width: 48em;
+$link_main: #373C51;
+$link_visited: #666F96;
 
 body, html {
   background-color: $global_bgcolor;
@@ -20,7 +24,12 @@ header, main, footer {
   padding: 0 1em;
 }
 
-header {
+a:link {
+  color: $link_main;
+}
+
+a:visited {
+  color: $link_visited;
 }
 
 header figure {
@@ -33,7 +42,7 @@ header img {
 }
 
 header h1 {
-  background: #F1BF98;
+  background: $header_background;
   font-size: 2.5em;
 }
 
@@ -73,9 +82,9 @@ footer nav ul li {
     padding: 0;
   }
   body {
-    border-bottom: 2em solid #EB4511;
+    border-bottom: 2.5em solid $global_bordercolor;
     padding: 3em 0;
-    border-top: 2em solid #EB4511;
+    border-top: 2.5em solid $global_bordercolor;
   }
   header, main, footer {
     width: 36em;
