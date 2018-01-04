@@ -25,3 +25,32 @@ Header set x-xss-protection "1; mode=block"
     RewriteRule ^(.*)$ https://oliverschwarz.info/$1 [r=301,L]
 
 </IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css
+</IfModule>
+
+# Gzip compression using mod_filter
+<IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE "text/css" "text/html"
+</IfModule>
+
+# ETags
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+# Control cache/expiry
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                          "access plus 1 month"
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType image/vnd.microsoft.icon  "access plus 1 week"
+    ExpiresByType image/x-icon              "access plus 1 week"
+    ExpiresByType text/html                 "access plus 0 seconds"
+    ExpiresByType image/jpeg                "access plus 1 month"
+    ExpiresByType image/png                 "access plus 1 month"
+</IfModule>
